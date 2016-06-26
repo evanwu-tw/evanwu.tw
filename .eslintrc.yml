@@ -1,0 +1,8 @@
+root: true
+
+extends: airbnb-base/legacy
+
+rules:
+    # Guidelines
+    indent: [2, 2, { "SwitchCase": 1 }]
+    no-unused-vars: [1, { "args": "after-used" }]
