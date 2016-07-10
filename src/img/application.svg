@@ -47,37 +47,37 @@
                             <circle id="Oval-1-Copy-2" cx="17.7596567" cy="2" r="2"></circle>
                         </g>
                     </g>
-                    <g id="Group-3" transform="translate(12.000000, 36.000000)" fill="#E6E6E6">
+                    <g id="Group-3" transform="translate(12.000000, 36.000000)" fill="#D1D1D1">
                         <rect id="Rectangle-13" x="0" y="0" width="55" height="6"></rect>
                         <rect id="Rectangle-13-Copy" x="0" y="13" width="145.082031" height="3"></rect>
                         <rect id="Rectangle-13-Copy-2" x="0" y="19" width="145.082031" height="3"></rect>
                         <rect id="Rectangle-13-Copy-3" x="0" y="25" width="88" height="3"></rect>
                     </g>
                     <g id="Group-4" transform="translate(85.000000, 84.000000)">
-                        <use id="Rectangle-10-Copy" stroke="#E1E1E1" mask="url(#mask-4)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-3"></use>
+                        <use id="Rectangle-10-Copy" stroke="#D1D1D1" mask="url(#mask-4)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-3"></use>
                         <g id="Group-2" transform="translate(1.000000, 5.000000)">
-                            <polyline id="Path-7" stroke="#E7E7E7" points="0.102050781 34.0625 8.31201172 40.8076172 15.8398438 32.1147461 22.5600586 16.9301758 28.1953125 24.9101563 36.640625 0.665039062 44.328125 24.3964844 51.2734375 34.9277344 60.4472656 29.5976563 63.0820313 34.0625"></polyline>
-                            <circle id="Oval-13" fill="#E7E7E7" cx="44" cy="24" r="2"></circle>
+                            <polyline id="Path-7" stroke="#D9D9D9" points="0.102050781 34.0625 8.31201172 40.8076172 15.8398438 32.1147461 22.5600586 16.9301758 28.1953125 24.9101563 36.640625 0.665039062 44.328125 24.3964844 51.2734375 34.9277344 60.4472656 29.5976563 63.0820313 34.0625"></polyline>
+                            <circle id="Oval-13" fill="#CCCCCC" cx="44" cy="24" r="2"></circle>
                         </g>
                     </g>
                     <g id="Group-6" transform="translate(12.000000, 84.000000)">
-                        <use id="Rectangle-10" stroke="#E1E1E1" mask="url(#mask-6)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-5"></use>
+                        <use id="Rectangle-10" stroke="#D1D1D1" mask="url(#mask-6)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-5"></use>
                         <g id="Group-5" transform="translate(12.000000, 8.000000)">
-                            <use id="Oval-11" stroke="#E1E1E1" mask="url(#mask-8)" stroke-width="2" xlink:href="#path-7"></use>
-                            <use id="Oval-11" stroke="#E1E1E1" mask="url(#mask-10)" stroke-width="2" xlink:href="#path-9"></use>
+                            <use id="Oval-11" stroke="#D9D9D9" mask="url(#mask-8)" stroke-width="2" xlink:href="#path-7"></use>
+                            <use id="Oval-11" stroke="#D9D9D9" mask="url(#mask-10)" stroke-width="2" xlink:href="#path-9"></use>
                             <use id="Oval-11" stroke="#4ACDD9" mask="url(#mask-12)" stroke-width="16" stroke-dasharray="11,87.91999816894531" xlink:href="#path-11"></use>
                         </g>
                     </g>
                     <g id="Group" transform="translate(158.000000, 84.000000)">
-                        <use id="Rectangle-10-Copy-2" stroke="#E1E1E1" mask="url(#mask-14)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-13"></use>
-                        <rect id="Rectangle-13-Copy-7" fill="#E6E6E6" x="0" y="14" width="65" height="1"></rect>
-                        <rect id="Rectangle-13-Copy-8" fill="#E6E6E6" x="0" y="28" width="65" height="1"></rect>
-                        <rect id="Rectangle-13-Copy-9" fill="#E6E6E6" x="0" y="43" width="65" height="1"></rect>
-                        <rect id="Rectangle-22" fill="#E7E7E7" x="15" y="0" width="1" height="58"></rect>
-                        <rect id="Rectangle-22-Copy" fill="#E7E7E7" x="32" y="0" width="1" height="58"></rect>
-                        <rect id="Rectangle-22-Copy-2" fill="#E7E7E7" x="49" y="0" width="1" height="58"></rect>
+                        <use id="Rectangle-10-Copy-2" stroke="#D1D1D1" mask="url(#mask-14)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-13"></use>
+                        <rect id="Rectangle-13-Copy-7" fill="#D9D9D9" x="0" y="14" width="65" height="1"></rect>
+                        <rect id="Rectangle-13-Copy-8" fill="#D9D9D9" x="0" y="28" width="65" height="1"></rect>
+                        <rect id="Rectangle-13-Copy-9" fill="#D9D9D9" x="0" y="43" width="65" height="1"></rect>
+                        <rect id="Rectangle-22" fill="#D9D9D9" x="15" y="0" width="1" height="58"></rect>
+                        <rect id="Rectangle-22-Copy" fill="#D9D9D9" x="32" y="0" width="1" height="58"></rect>
+                        <rect id="Rectangle-22-Copy-2" fill="#D9D9D9" x="49" y="0" width="1" height="58"></rect>
                     </g>
-                    <rect id="Rectangle-4" fill="#E8E8E8" x="2" y="14" width="232" height="10"></rect>
+                    <rect id="Rectangle-4" fill="#E6E6E6" x="2" y="14" width="232" height="10"></rect>
                 </g>
             </g>
         </g>
