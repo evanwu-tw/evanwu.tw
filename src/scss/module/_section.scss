@@ -1,0 +1,28 @@
+// *************************************
+//
+//   section
+//   -> section setting
+//
+// *************************************
+
+.section {
+  padding: 100px 0;
+  background-color: $c-section;
+  &.gray {
+    background-color: $c-section-gray; 
+  }
+}
+
+.section-inner {
+  margin: 0 auto;
+  @include bp(desktopHD) {
+    width: 1080px;
+  }
+}
+
+.section-title {
+  margin-bottom: 40px;
+  font-size: 32px;
+  line-height: 1;
+  color: $c-text;
+}

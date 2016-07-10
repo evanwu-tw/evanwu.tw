@@ -11,19 +11,21 @@
 
 .header {
   position: fixed;
-  padding-top: 50px;
+  z-index: z(fix);
+  padding-top: 40px;
   width: 100%;
   box-sizing: border-box;
   background-color: transparent;
   &.is-scroll {
     padding-top: 0;
-    background-color: rgba($c-white, .3);
+    background-color: rgba($c-white, .9);
   }
 }
 
 .head-inner {
   position: relative;
   margin: 0 auto;
+  padding: 10px 0;
   width: 100%;
   @include bp(desktopHD) {
     max-width: 1080px;
@@ -48,7 +50,7 @@
 
 .nav {
   position: absolute;
-  top: 0;
+  top: 22px;
   right: 0;
   font-size: 0;
 }
@@ -56,6 +58,9 @@
 .nav-item {
   display: inline-block;
   font-size: 18px;
+  & + & {
+    margin-left: 18px;
+  }
 }
 
 .nav-item-link {

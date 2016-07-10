@@ -15,6 +15,14 @@
 @import "base/base";
 @import "base/tools";
 
+
+// -------------------------------------
+//   layout
+// -------------------------------------
+
+@import "layout";
+
+
 // -------------------------------------
 //   utils
 // -------------------------------------
@@ -28,3 +36,5 @@
 
 @import "module/header";
 @import "module/hero";
+@import "module/section";
+@import "module/service";

@@ -30,11 +30,25 @@ $c-secondary:              #F26868 !default; // rgb-red
 $c-text:                   $c-gray-dark !default; // 文字主色
 $c-sub-text:               $c-gray !default;
 
+// section
+$c-section:                $c-white !default;
+$c-section-gray:           darken($c-white, 3%) !default;
+
+
 // ----- component ----- //
 
 // nav
 $nav-link:                 $c-text !default;
 $nav-link-hover:           $c-brand !default;
+
+
+// -------------------------------------
+//   font size
+// -------------------------------------
+
+$font-size-small:          13px !default;
+$font-size-base:           16px !default;
+$font-size-large:          21px !default;
 
 
 // -------------------------------------
@@ -57,4 +71,26 @@ $bp: (
   "phone-land":            667px,
   "phone-middle":          480px,
   "phone-portrait":        320px
+);
+
+
+// -------------------------------------
+//   Z-index
+// -------------------------------------
+
+// ex: z-index: z(module, upper)/z(head)...
+$z-layers: (
+  "mask":                 10010,
+  "popup":                9000,
+  "fix":                  100,
+  "head":                 99,
+  "nav-head":             9,
+  "module": (
+    "upper":              7,
+    "base":               5,
+    "lower":              3
+  ),
+  "default":              1,
+  "below":                -1,
+  "hidden":               -9000
 );

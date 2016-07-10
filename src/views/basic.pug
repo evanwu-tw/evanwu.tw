@@ -14,8 +14,9 @@ html
     
 
   body
+    .warp
     block background
-    header.header
+    header.header.is-scroll
       .head-inner
         a.logo-link(href="#")
           .logo
@@ -26,12 +27,14 @@ html
           li.nav-item
             a.nav-item-link(href="#") about
     .hero
-      .hero-title
-        block head-title
-      .hero-sub-title
-        block head-sub-title
-
+      .hero-inner
+        .hero-title
+          block head-title
+        .hero-sub-title
+          block head-sub-title
+    // content
     block content
+    footer.footer
 
     script(src="http://code.jquery.com/jquery-3.0.0.min.js", integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=", crossorigin="anonymous")
     script(src="js/public.js")

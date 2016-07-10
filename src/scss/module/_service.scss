@@ -1,0 +1,29 @@
+// *************************************
+//
+//   service
+//   -> service spectrum
+//
+// *************************************
+
+.service {
+  text-align: center;
+}
+
+.service-img {
+  margin-bottom: 35px;
+}
+
+.service-title {
+  margin-bottom: 25px;
+  font-size: $font-size-large;
+  font-weight: 600;
+  color: $c-text;
+}
+
+.service-content {
+  font-size: $font-size-base;
+  font-weight: 400;
+  line-height: 1.4;
+  // color: lighten($c-sub-text, 6%);
+  color: $c-sub-text;
+}
