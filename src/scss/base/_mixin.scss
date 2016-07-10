@@ -1,0 +1,21 @@
+// *************************************
+//
+//   mixin
+//   -> mixin setting
+//
+// *************************************
+
+// -------------------------------------
+//   Breakpoint - media queries
+// -------------------------------------
+
+@mixin bp($_bp) {
+  @if map-has-key($bp, $_bp) {
+    @media (max-width: #{map-get($bp, $_bp)}) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$bp}`. "
+    + "Please make sure it is defined in `$bp` map.";
+  }
+}

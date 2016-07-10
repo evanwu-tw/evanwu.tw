@@ -1,0 +1,66 @@
+// *************************************
+//
+//   header
+//   -> header setting
+//
+// *************************************
+
+// -------------------------------------
+//   header basic
+// -------------------------------------
+
+.header {
+  position: fixed;
+  padding-top: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  &.is-scroll {
+    padding-top: 0;
+    background-color: rgba($c-white, .3);
+  }
+}
+
+.head-inner {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  @include bp(desktopHD) {
+    max-width: 1080px;
+  }
+}
+
+
+// -------------------------------------
+//   logo
+// -------------------------------------
+
+.logo-link {
+}
+
+.logo {
+}
+
+
+// -------------------------------------
+//   nav
+// -------------------------------------
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.nav-item-link {
+  color: $nav-link;
+  &:hover {
+    color: $nav-link-hover;
+  }
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="236px" height="180px" viewBox="0 0 236 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>B3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="236" height="180" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="236" height="180" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="works" transform="translate(-1015.000000, -820.000000)">
+            <g id="section3" transform="translate(180.000000, 727.000000)">
+                <g id="B3" transform="translate(835.000000, 93.000000)">
+                    <g id="browser-copy-2">
+                        <use id="browser-bg" stroke="#C7C7C7" mask="url(#mask-2)" stroke-width="4" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <polygon id="browser-line" fill="#C9C9C9" points="1 13 234 13 234 14 1 14"></polygon>
+                        <g id="browser-ctrl" transform="translate(6.754139, 5.614378)" stroke="#C9C9C9" fill="#FFFFFF">
+                            <circle id="Oval-1" cx="2" cy="2" r="2"></circle>
+                            <circle id="Oval-1-Copy" cx="9.87982833" cy="2" r="2"></circle>
+                            <circle id="Oval-1-Copy-2" cx="17.7596567" cy="2" r="2"></circle>
+                        </g>
+                    </g>
+                    <text id="extends-basic" font-family="OpenSans, Open Sans" font-size="9" font-weight="normal">
+                        <tspan x="63" y="33" fill="#B3B3B3">extends basic</tspan>
+                        <tspan x="63" y="46" fill="#B3B3B3"></tspan>
+                        <tspan x="63" y="59" fill="#B3B3B3">block </tspan>
+                        <tspan x="87.5742188" y="59" fill="#4ACDD9">script</tspan>
+                        <tspan x="110.794922" y="59" fill="#B3B3B3"></tspan>
+                        <tspan x="63" y="72" fill="#B3B3B3">    script(src="js/kendo_js/console.js")</tspan>
+                        <tspan x="63" y="85" fill="#B3B3B3">    script(src="js/kendo_js/people.js")</tspan>
+                        <tspan x="63" y="98" fill="#B3B3B3"></tspan>
+                        <tspan x="63" y="111" fill="#B3B3B3">block </tspan>
+                        <tspan x="87.5742188" y="111" fill="#4ACDD9">head</tspan>
+                        <tspan x="108.667969" y="111" fill="#B3B3B3"></tspan>
+                        <tspan x="63" y="124" fill="#B3B3B3">    include layout/nav/breadcrumb</tspan>
+                        <tspan x="63" y="137" fill="#B3B3B3">    include layout/nav/user-menu</tspan>
+                        <tspan x="63" y="150" fill="#B3B3B3"></tspan>
+                        <tspan x="63" y="163" fill="#B3B3B3">block </tspan>
+                        <tspan x="87.5742188" y="163" fill="#4ACDD9">title</tspan>
+                        <tspan x="103.530762" y="163" fill="#B3B3B3"></tspan>
+                        <tspan x="63" y="176" fill="#B3B3B3">  </tspan>
+                    </text>
+                    <rect id="Rectangle-22" fill="#F0F0F0" x="2" y="14" width="50" height="164"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

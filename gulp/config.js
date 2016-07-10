@@ -72,7 +72,7 @@ export default {
 
     // Images
     images: {
-        src: ['static/img/**/*.+(jpg|jpeg|gif|png)'],
+        src: ['src/img/**/*.+(jpg|jpeg|gif|png|svg)'],
         filter: [],
         imagemin: {},
         dest: 'www/img'
@@ -80,7 +80,7 @@ export default {
 
     // Fonts
     fonts: {
-        src: ['static/fonts/**/*.+(woff|woff2|ttf|eot|svg)'],
+        src: ['src/fonts/**/*.+(woff|woff2|ttf|eot|svg)'],
         dest: 'www/fonts'
     },
 
@@ -141,9 +141,9 @@ export default {
     // -------------------------------------
 
     tasks: {
-        dev: ['sass', 'pug', 'scripts', 'vendor'],
-        prod: ['sass', 'pug', 'scripts', 'vendor'],
-        watch: ['sass', 'pug', 'scripts']
+        dev: ['sass', 'pug', 'scripts', 'images'],
+        prod: ['sass', 'pug', 'scripts', 'images'],
+        watch: ['sass', 'pug', 'scripts', 'images']
     }
 
 };
