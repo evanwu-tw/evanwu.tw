@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "author": "",
   "description": "",
+  "license": "UNLICENSED",
+  "private": true,
   "main": "index.js",
   "engines": {
     "node": ">=0.14.x"
