@@ -11,8 +11,9 @@
 
 .hero {
   height: 80%;
-  box-sizing: border-box;
+  font-size: 0;
   text-align: center;
+  box-sizing: border-box;
   &:before {
     content: "";
     display: inline-block;
