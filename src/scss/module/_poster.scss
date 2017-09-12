@@ -1,0 +1,22 @@
+// *************************************
+//
+//   poster
+//   -> project and product album
+//
+// *************************************
+
+.poster {
+}
+
+.poster-link {
+  display: block;
+}
+
+.poster-photo {
+  padding-bottom: 50%;
+  background-color: lighten($c-gray-light, 20%);
+}
+
+.poster-info {
+  padding: 15px 0;  
+}
