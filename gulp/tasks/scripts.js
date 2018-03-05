@@ -17,7 +17,7 @@ import handleErrors from '../util/handleErrors';
 
 import pkg from '../../package.json';
 
-gulp.task('scripts', ['eslint'], () => {
+gulp.task('scripts', () => {
     // Will Concat?
     let willConcat = false;
     if (config.scripts.output) {
