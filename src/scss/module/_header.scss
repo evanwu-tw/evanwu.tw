@@ -10,14 +10,14 @@
 // -------------------------------------
 
 .header {
-  position: fixed;
-  z-index: z(fix);
-  padding-top: 40px;
+  padding: 40px 16px 0;
   width: 100%;
   box-sizing: border-box;
   background-color: transparent;
   &.is-scroll {
-    padding-top: 0;
+    position: fixed;
+    z-index: z(fix);
+    padding: 0 16px;
     background-color: rgba($c-white, .9);
   }
 }
