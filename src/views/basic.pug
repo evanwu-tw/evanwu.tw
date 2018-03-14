@@ -14,28 +14,28 @@ html
     
 
   body
-    .warp
-    block background
-    header.header
-      .head-inner
-        a.logo-link(href="#")
-          .logo
-            img(src="../img/logo.svg")
-        ul.nav
-          li.nav-item
-            a.nav-item-link(href="#") works
-          li.nav-item
-            a.nav-item-link(href="#") about
-    .hero
-      .hero-inner
-        .hero-title
-          block head-title
-        .hero-sub-title
-          block head-sub-title
-    // content
-    block content
-    footer.footer
+    .wrapper
+      header.header
+        .head-inner
+          a.logo-link(href="#")
+            .logo
+              img(src="../img/logo.svg")
+          ul.nav
+            li.nav-item
+              a.nav-item-link(href="#") works
+            li.nav-item
+              a.nav-item-link(href="#") about
+      .hero
+        block background
+        .hero__inner
+          .hero-title
+            block head-title
+          .hero-sub-title
+            block head-sub-title
+      // content
+      block content
+      footer.footer
 
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-    script(src="./js/public.js")
-    block script
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+      script(src="./js/public.js")
+      block script

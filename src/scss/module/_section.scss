@@ -16,7 +16,7 @@
 .section-inner {
   margin: 0 auto;
   @include bp(desktopHD) {
-    width: 1080px;
+    max-width: 1200px;
   }
 }
 

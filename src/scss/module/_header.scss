@@ -10,25 +10,27 @@
 // -------------------------------------
 
 .header {
-  padding: 40px 16px 0;
+  position: fixed;
+  z-index: z(fix);
+  padding: 32px 16px 0;
   width: 100%;
   box-sizing: border-box;
   background-color: transparent;
+  transition: padding 100ms ease-in;
   &.is-scroll {
-    position: fixed;
-    z-index: z(fix);
     padding: 0 16px;
     background-color: rgba($c-white, .9);
   }
 }
 
 .head-inner {
-  position: relative;
+  display: flex;
   margin: 0 auto;
   padding: 10px 0;
   width: 100%;
+  max-width: 1200px;
   @include bp(desktopHD) {
-    max-width: 1080px;
+    max-width: 1200px;
   }
 }
 
@@ -38,6 +40,7 @@
 // -------------------------------------
 
 .logo-link {
+  display: block;
 }
 
 .logo {
@@ -49,10 +52,9 @@
 // -------------------------------------
 
 .nav {
-  position: absolute;
-  top: 22px;
-  right: 0;
-  font-size: 0;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .nav-item {
