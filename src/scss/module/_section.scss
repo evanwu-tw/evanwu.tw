@@ -11,12 +11,16 @@
   &.gray {
     background-color: $c-section-gray; 
   }
-}
-
-.section-inner {
-  margin: 0 auto;
-  @include bp(desktopHD) {
-    max-width: 1200px;
+  &__inner {
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+    @include bp(desktopHD) {
+      max-width: 1200px;
+    }
+    @include bp(desktop) {
+      max-width: 1080px;
+    }
   }
 }
 
