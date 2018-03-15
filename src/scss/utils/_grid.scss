@@ -25,11 +25,16 @@
   &[class*="-center"]{
     justify-content: center;
   }
-  
+
   &[class*="-right"]{
     justify-content: flex-end;
     align-self: flex-end;
     margin-left: auto;
+  }
+
+  // stretch
+  &[class*="-stretch"] {
+    align-items:stretch;
   }
 
   // padding

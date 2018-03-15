@@ -6,11 +6,19 @@
 // *************************************
 
 .service {
+  padding: 24px;
+  height: 100%;
   text-align: center;
+  background: darken($c-section-gray, 2.5%);
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .service-img {
   margin-bottom: 35px;
+  @include bp(pad-portrait) {
+    width: 100%;
+  }
 }
 
 .service-title {
@@ -24,6 +32,5 @@
   font-size: $font-size-base;
   font-weight: 400;
   line-height: 1.4;
-  // color: lighten($c-sub-text, 6%);
   color: $c-sub-text;
 }

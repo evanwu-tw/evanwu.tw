@@ -18,13 +18,13 @@
   background-color: transparent;
   transition: padding 100ms ease-in;
   &.is-scroll {
-    padding: 0 16px;
+    padding: 0;
     background-color: rgba($c-white, .9);
   }
   &__inner {
     display: flex;
     margin: 0 auto;
-    padding: 10px 16px 0;
+    padding: 10px 16px;
     width: 100%;
     box-sizing: border-box;
     @include bp(desktopHD) {
