@@ -20,6 +20,30 @@
   }
 }
 
+// -------------------------------------
+//   grid system
+// -------------------------------------
+
+// Grid Mixin
+@mixin makeGrid($grid) {
+  @for $_grid-i from 1 through $grid-col {
+    [class*="#{$grid}-#{$_grid-i}"] > .#{$col-name} { 
+      flex-basis: 100% / $_grid-i;
+      max-width: 100% / $_grid-i;
+    }
+  }
+}
+
+// Colume Mixin
+@mixin makeCol($col) {
+  @for $_grid-i from 1 through $grid-col {
+    [class*="#{$col}-#{$_grid-i}"] { 
+      flex-basis: ($_grid-i/$grid-col) * 100%;
+      max-width: ($_grid-i/$grid-col) * 100%;
+    }
+  }
+}
+
 
 // -------------------------------------
 //   z-index

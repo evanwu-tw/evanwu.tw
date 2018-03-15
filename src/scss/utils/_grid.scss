@@ -5,66 +5,41 @@
 //
 // *************************************
 
-.row:before, .row:after {
-  content: "";
-  display: table;
-}
-.row:after {
-  clear: both;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
-
-// ----- Grid System Basic Settings ----- //
-@for $_grid-i from 1 through $grid-col {
-  .col-#{$_grid-i}, 
-  .col-wp-#{$_grid-i}, 
-  .col-wm-#{$_grid-i} {
-    position: relative;
-    float: left;
-    box-sizing: border-box;
+[class*="col"] {
+  position: relative;
+  flex: 1;
+  box-sizing: border-box;
+  
+  // No Wrapping
+  &[class*="-noWrap"]{
+    flex-wrap: nowrap;
   }
-  // .col-padding {
-  //   padding-left: $grid-gutter;
-  //   padding-right: $grid-gutter;
-  // }
-  // @include bp(pad) {
-  //   .col-wp-padding {
-  //     padding-left: $grid-gutter;
-  //     padding-right: $grid-gutter;
-  //   }
-  // }
-  // @include bp(mobile) {
-  //   .col-wm-padding {
-  //     padding-left: $grid-gutter;
-  //     padding-right: $grid-gutter;
-  //   }
-  // }
-}
+ 
+  // Horizontal alignment
+  &[class*="-center"]{
+    justify-content: center;
+  }
+  
+  &[class*="-right"]{
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin-left: auto;
+  }
 
-// ----- Col Common ----- //
-
-@for $_grid-i from 1 through $grid-col {
-  .col-#{$_grid-i} {
-    width: ($_grid-i / $grid-col) * 100%;
+  // padding
+  &[class*="-padding"] {
+    padding: 0 8px;
   }
 }
 
-// ----- Col for pad(land) ----- //
+// Grid Common
+@include makeGrid($grid-name);
 
-@for $_grid-i from 1 through $grid-col {
-  @include bp(pad-land) {
-    .col-wp-#{$_grid-i} {
-      width: ($_grid-i / $grid-col) * 100%;
-    }
-  }
-}
-
-// ----- Col for phone(land) ----- //
-
-@for $_grid-i from 1 through $grid-col {
-  @include bp(phone-land) {
-    .col-wm-#{$_grid-i} {
-      width: ($_grid-i / $grid-col) * 100%;
-    }
-  }
-}
+// Column Common
+@include makeCol($col-name);
