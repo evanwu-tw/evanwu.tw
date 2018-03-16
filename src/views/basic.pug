@@ -20,11 +20,20 @@ html
           a.logo-link(href="#")
             .logo
               img(src="../img/logo.svg")
-          ul.nav
+          ul.nav.nav--header
             li.nav__item
               a.nav__link(href="#") works
             li.nav__item
               a.nav__link(href="#") about
+            li.nav__item
+              a.nav__link(href="#")
+                i.fab.fa-dribbble
+            li.nav__item
+              a.nav__link(href="#")
+                i.fab.fa-behance
+            li.nav__item
+              a.nav__link(href="#")
+                i.fab.fa-linkedin-in
       .hero
         block background
         .hero__inner
@@ -35,7 +44,16 @@ html
       // content
       block content
       footer.footer
+        .footer__inner
+          ul.nav
+            li.nav__item
+              a.nav__link(href="#") works
+            li.nav__item
+              a.nav__link(href="#") about
+          .copyright © 2018 Evan Wu | All Rights Reserved
 
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+      script(defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous")
+      
       script(src="./js/public.js")
       block script

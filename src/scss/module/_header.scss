@@ -56,7 +56,9 @@
 .nav {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  &--header {
+    margin-left: auto;
+  }
   &__item {
     display: inline-block;
     font-size: 18px;
