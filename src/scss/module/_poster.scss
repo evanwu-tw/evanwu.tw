@@ -6,6 +6,7 @@
 // *************************************
 
 .poster {
+  margin: 0 8px 8px;
 }
 
 .poster-link {
@@ -13,8 +14,18 @@
 }
 
 .poster-photo {
-  padding-bottom: 50%;
+  position: relative;
+  padding-top: 75%;
   background-color: lighten($c-gray-light, 20%);
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .poster-info {
