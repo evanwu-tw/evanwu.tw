@@ -9,5 +9,8 @@
   &__inner {
     margin: 0 auto;
     max-width: 1200px;
+    @include bp(desktop) {
+      max-width: 1080px;
+    }
   }
 }

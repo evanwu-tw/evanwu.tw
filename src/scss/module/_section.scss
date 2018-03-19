@@ -17,10 +17,8 @@
   &__inner {
     margin: 0 auto;
     padding: 0 16px;
+    max-width: 1200px;
     box-sizing: border-box;
-    @include bp(desktopHD) {
-      max-width: 1200px;
-    }
     @include bp(desktop) {
       max-width: 1080px;
     }

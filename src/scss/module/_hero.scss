@@ -24,13 +24,11 @@
     display: inline-block;
     padding: 0 16px;
     width: 100%;
+    max-width: 1200px;
     text-align: left;
     color: $c-sub-text;
     vertical-align: middle;
     box-sizing: border-box;
-    @include bp(desktopHD) {
-      max-width: 1200px;
-    }
     @include bp(desktop) {
       max-width: 1080px;
     }
