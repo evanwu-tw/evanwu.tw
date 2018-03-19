@@ -57,6 +57,9 @@
   &--header {
     margin-left: auto;
   }
+  &--center {
+    justify-content:center;
+  }
   &__item {
     display: inline-block;
     font-size: 18px;
