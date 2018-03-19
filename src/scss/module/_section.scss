@@ -11,6 +11,9 @@
   &.gray {
     background-color: $c-section-gray; 
   }
+  @include bp(pad-portrait) {
+    padding: 56px 0;
+  }
   &__inner {
     margin: 0 auto;
     padding: 0 16px;
@@ -29,4 +32,7 @@
   font-size: 32px;
   line-height: 1;
   color: $c-text;
+  @include bp(pad-portrait) {
+    margin-bottom: 16px;
+  }
 }
