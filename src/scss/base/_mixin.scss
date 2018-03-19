@@ -42,6 +42,38 @@
       max-width: ($_grid-i/$grid-col) * 100%;
     }
   }
+  @include bp(pad-land) {
+    @for $_grid-i from 1 through $grid-col {
+      [class*="#{$col}-pd-l-#{$_grid-i}"] { 
+        flex-basis: ($_grid-i/$grid-col) * 100%;
+        max-width: ($_grid-i/$grid-col) * 100%;
+      }
+    }
+  }
+  @include bp(pad-portrait) {
+    @for $_grid-i from 1 through $grid-col {
+      [class*="#{$col}-pd-p-#{$_grid-i}"] { 
+        flex-basis: ($_grid-i/$grid-col) * 100%;
+        max-width: ($_grid-i/$grid-col) * 100%;
+      }
+    }
+  }
+  @include bp(phone-land) {
+    @for $_grid-i from 1 through $grid-col {
+      [class*="#{$col}-mb-l-#{$_grid-i}"] { 
+        flex-basis: ($_grid-i/$grid-col) * 100%;
+        max-width: ($_grid-i/$grid-col) * 100%;
+      }
+    }
+  }
+  @include bp(phone-portrait) {
+    @for $_grid-i from 1 through $grid-col {
+      [class*="#{$col}-mb-p-#{$_grid-i}"] { 
+        flex-basis: ($_grid-i/$grid-col) * 100%;
+        max-width: ($_grid-i/$grid-col) * 100%;
+      }
+    }
+  }
 }
 
 
