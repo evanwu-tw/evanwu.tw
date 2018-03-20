@@ -122,7 +122,8 @@ export default {
         'otf',
         'ttc',
         'ttf',
-        'woff2?'
+        'woff2?',
+        'html'
     ],
 
     gzip: {
