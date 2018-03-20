@@ -63,15 +63,14 @@
   &__item {
     display: inline-block;
     font-size: 18px;
-    & + & {
-      margin-left: 18px;
-    }
   }
   &__link {
+    display: block;
+    padding: 12px 16px;
     color: $nav-link;
     &:hover {
       color: $nav-link-hover;
-      transition: color 160ms ease-in;
+      transition: color 200ms ease-in;
     }
   }
 }
