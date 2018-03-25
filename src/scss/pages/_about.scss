@@ -1,0 +1,33 @@
+// *************************************
+//
+//   about pages
+//
+// *************************************
+
+// -------------------------------------
+//   cv 
+// -------------------------------------
+
+.cv-section {
+  display: flex;
+  margin: 0 auto;
+  padding: 24px 16px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  line-height: 1.5;
+  @include bp(desktop) {
+    max-width: 1080px;
+  }
+  &__title {
+    flex: 0 0 160px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: right;
+  }
+  &__content {
+    flex: 1 1 auto;
+    padding: 0 0 0 64px;
+    font-size: 18px;
+  }
+}
