@@ -1,18 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <svg width="218px" height="218px" viewBox="0 0 218 218" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
     <title>方框4</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <rect id="path-1" x="1531.60519" y="1011.60519" width="133.289628" height="133.289628"></rect>
-        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-10" y="-10" width="153.289628" height="153.289628">
-            <rect x="1521.60519" y="1001.60519" width="153.289628" height="153.289628" fill="white"></rect>
-            <use xlink:href="#path-1" fill="black"></use>
-        </mask>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-3" transform="translate(-1489.000000, -969.000000)" stroke="#F8F8F8" stroke-width="20">
-            <use id="方框4" mask="url(#mask-2)" transform="translate(1598.250000, 1078.250000) rotate(45.000000) translate(-1598.250000, -1078.250000) " xlink:href="#path-1"></use>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-3" transform="translate(-1489.000000, -969.000000)" stroke="#F7F7F7" stroke-width="10">
+            <path d="M1598.25,976.928932 L1699.57107,1078.25 L1598.25,1179.57107 L1496.92893,1078.25 L1598.25,976.928932 Z" id="方框4"></path>
         </g>
     </g>
 </svg>
