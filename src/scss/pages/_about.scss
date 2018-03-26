@@ -15,7 +15,7 @@
   width: 100%;
   max-width: 1200px;
   box-sizing: border-box;
-  line-height: 1.5;
+  line-height: 2;
   @include bp(desktop) {
     max-width: 1080px;
   }
@@ -29,5 +29,7 @@
     flex: 1 1 auto;
     padding: 0 0 0 64px;
     font-size: 18px;
+    color: lighten($c-black, 40%);
+    
   }
 }
