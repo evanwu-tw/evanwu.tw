@@ -1,6 +1,9 @@
+const $ = require('jquery');
+require('./scss/basic.scss');
+
 // head scroll fix
 function headScroll() {
-  $(window).scroll(function () {
+  $(window).scroll(() => {
     if ($(window).scrollTop()) {
       $('.header').addClass('is-scroll');
     } else {
@@ -10,6 +13,6 @@ function headScroll() {
 }
 
 // docmuent ready
-$(document).ready(function () {
+$(document).ready(() => {
   headScroll();
 });

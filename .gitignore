@@ -4,7 +4,7 @@
 
 
 ### npm ###
-npm-debug.log
+*.log
 node_modules/
 
 

@@ -1,6 +1,9 @@
 root: true
 
-extends: airbnb-base/legacy
+extends: airbnb-base
+
+env:
+    browser: true
 
 rules:
     # Guidelines
