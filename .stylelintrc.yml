@@ -1,0 +1,9 @@
+extends: stylelint-config-sass-guidelines
+
+rules:
+  indentation: 2
+  selector-pseudo-element-colon-notation: single
+
+ignoreFiles:
+  - node_modules/
+  - www/
