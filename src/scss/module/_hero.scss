@@ -19,9 +19,9 @@
   text-align: center;
   box-sizing: border-box;
   &__inner {
-    margin: 0 auto 80px;
     z-index: z(default);
     display: inline-block;
+    margin: 0 auto 80px;
     padding: 0 16px;
     width: 100%;
     max-width: 1200px;
@@ -84,24 +84,65 @@
 
 .square-line-1 {
   position: absolute;
+  transform: rotate(45deg);
+  &--index {
+    top: -20%;
+    left: -5%;
+  }
 }
 
 .square-line-2 {
   position: absolute;
+  transform: rotate(45deg);
+  &--index {
+    right: 15%;
+    bottom: -10%;
+  }
+  &--about {
+    right: -5%;
+    bottom: 10%;
+  }
 }
 
 .square-line-3 {
   position: absolute;
+  transform: rotate(45deg);
+  &--about {
+    top: 10%;
+    right: 24%;
+  }
 }
 
 .square-line-4 {
   position: absolute;
+  transform: rotate(45deg);
+  &--about {
+    top: 20%;
+    left: -5%;
+  }
 }
 
 .square {
   position: absolute;
+  transform: rotate(45deg);
+  &--index {
+    right: 18%;
+    bottom: 40%;
+  }
+  &--about {
+    right: 9%;
+    bottom: 30%;
+  }
 }
 
 .triangle {
   position: absolute;
+  &--index {
+    right: 5%;
+    bottom: 15%;
+  }
+  &--about {
+    left: 35%;
+    bottom: 5%;
+  }
 }

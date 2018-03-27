@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="980px" height="980px" viewBox="0 0 980 980" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="710px" height="710px" viewBox="0 0 710 710" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
     <title>方框1</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-3" transform="translate(-99.000000, -151.000000)" stroke="#F7F7F7" stroke-width="50">
-            <path d="M588.512711,175.644661 L1053.38076,640.512711 L588.512711,1105.38076 L123.644661,640.512711 L588.512711,175.644661 Z" id="方框1"></path>
+        <g id="Artboard-3" transform="translate(-169.000000, -191.000000)" stroke="#F7F7F7" stroke-width="50">
+            <path d="M194,216 L854,216 L854,876 L194,876 L194,216 Z" id="方框1"></path>
         </g>
     </g>
 </svg>
