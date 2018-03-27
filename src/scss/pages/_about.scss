@@ -51,3 +51,34 @@
     }
   }
 }
+
+// -------------------------------------
+//   company
+// -------------------------------------
+
+.co-list {
+  & > li + li {
+    margin-bottom: 4px;
+  }
+}
+.co-title.co-title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: $c-black;
+}
+
+.co-info {
+  font-size: 16px;
+  color: darken($c-gray-light, 15%);
+}
+
+.co-date.co-date {
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-style: italic;
+  color: $c-gray-light;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
