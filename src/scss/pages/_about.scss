@@ -15,9 +15,9 @@
   width: 100%;
   max-width: 1200px;
   box-sizing: border-box;
-  line-height: 2;
-  @include bp(desktop) {
-    max-width: 1080px;
+  line-height: 1.6;
+  &:last-of-type {
+    margin-bottom: 24px;
   }
   &__title {
     flex: 0 0 160px;
@@ -30,6 +30,24 @@
     padding: 0 0 0 64px;
     font-size: 18px;
     color: lighten($c-black, 40%);
-    
+    > ul > li {
+      margin-bottom: 8px;
+    }
+  }
+
+  @include bp(desktop) {
+    max-width: 1080px;
+  }
+  @include bp(pad-middle) {
+    flex-direction:column;
+    &__title {
+      flex: 0 0 auto;
+      margin-bottom: 8px;
+      text-align: left;
+    }
+    &__content {
+      flex: 0 0 auto;
+      padding: 0;
+    }
   }
 }
