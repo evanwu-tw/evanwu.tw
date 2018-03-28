@@ -29,6 +29,7 @@
     flex: 1 1 auto;
     padding: 0 0 0 64px;
     font-size: 18px;
+    font-weight: 300;
     color: lighten($c-black, 40%);
     > ul > li {
       margin-bottom: 8px;
@@ -72,6 +73,9 @@
 .co-info {
   font-size: 16px;
   color: darken($c-gray-light, 15%);
+  & > a, & > span {
+    vertical-align: middle;
+  }
 }
 
 .co-date.co-date {

@@ -76,3 +76,48 @@
   }
 }
 
+
+// -------------------------------------
+//   utility
+// -------------------------------------
+
+.burg {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 3px;
+  transition: .2s;
+  background: black;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background: #000;
+    transition: .2s;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background: #000;
+    transition: .2s;
+  }
+}
+
+.activeBurg {
+  background: transparent;
+  &:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  &:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}
