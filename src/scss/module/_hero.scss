@@ -146,3 +146,35 @@
     bottom: 5%;
   }
 }
+
+// ----- hero scroll tip ----- //
+
+.scroll-tip {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: z(default);
+  height: 30px;
+  font-size: 20px;
+  color: $c-brand;
+  text-align: center;
+  & > [class ~="fa-chevron-down"] {
+    animation: scroll-loop 1000ms ease-in infinite;
+  }
+}
+
+@keyframes scroll-loop {
+  0% {
+    transform: translate3d(0 , 0, 0);
+    color: $c-brand;
+  }
+  50% {
+    transform: translate3d(0 , 8px, 0);
+    color: darken($c-primary, 20%);
+  }
+  100% {
+    transform: translate3d(0 , 0, 0);
+    color: $c-brand;
+  }
+}
