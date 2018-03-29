@@ -79,5 +79,8 @@ module.exports = {
 
   devServer: {
     stats: 'errors-only',
+    // Serve files in `public/` directory
+    contentBase: path.resolve(__dirname, 'public'),
+    watchContentBase: true,
   },
 };
