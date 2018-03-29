@@ -76,6 +76,14 @@
   & > a, & > span {
     vertical-align: middle;
   }
+  & > a {
+    color: darken($c-brand, 20%);
+    transition: color 200ms ease-in;
+    &:hover {
+      color: $c-brand;
+      text-decoration: none;
+    }
+  }
 }
 
 .co-date.co-date {
