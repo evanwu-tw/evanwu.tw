@@ -13,16 +13,16 @@
   position: relative;
   z-index: z(below);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   height: 96vh;
   font-size: 0;
   text-align: center;
   box-sizing: border-box;
+
   &__inner {
-    z-index: z(default);
     display: inline-block;
-    margin: 0 auto 80px;
-    padding: 0 16px;
+    margin: 0 auto;
+    padding: 30vh 16px 0;
     width: 100%;
     max-width: 1200px;
     text-align: left;
@@ -40,7 +40,11 @@
 
 .hero-title {
   position: relative;
+  z-index: z(default);
   margin-bottom: 20px;
+  @include bp(pad-portrait) {
+    margin-bottom: 8px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -54,10 +58,18 @@
     font-size: 56px;
     font-weight: 600;
     line-height: 1.3;
+    @include bp(pad-portrait) {
+      font-size: 48px;
+    }
+    @include bp(phone-middle) {
+      font-size: 32px;
+    }
   }
 }
 
 .hero-sub-title {
+  position: relative;
+  z-index: z(default);
   h3 {
     font-size: 21px;
     font-weight: 400;
