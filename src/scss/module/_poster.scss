@@ -11,12 +11,12 @@
 
 .poster-link {
   display: block;
-  padding: 8px;
+  padding: 8px 8px 0;
   &:hover {
     background: $c-white;
     border-radius: 4px;
-    box-shadow: 0 16px 36px rgba($c-black, .1);
-    transition: all 300ms ease-in;
+    box-shadow: 0 16px 36px rgba($c-black, .16);
+    transition: all 300ms ease-out;
     transform: translate3d(0, -8px, 0);
   }
 }

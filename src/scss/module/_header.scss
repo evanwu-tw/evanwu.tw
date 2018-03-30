@@ -16,7 +16,7 @@
   width: 100%;
   box-sizing: border-box;
   background-color: transparent;
-  transition: padding 240ms ease-in;
+  transition: padding 240ms ease-out;
   &.is-scroll {
     padding: 0;
     background-color: rgba($c-white, .9);
@@ -25,9 +25,11 @@
   &.open-menu {
     background-color: rgba($c-white, .98);
     box-shadow: 0 1px 6px rgba(0, 0, 0, .08);
+    transition: all 300ms ease-out;
     .nav--header {
       display: flex;
       transform: translate3d(0, 0, 0);
+      animation: fade-in-down 300ms ease-out;
       @include bp(pad-portrait) {
         width: 100%;
       }
@@ -79,8 +81,6 @@
       align-items: stretch;
       margin-left: initial;
       padding-top: 16px;
-      transform: translate3d(0 , -100%, 0);
-      transition: transform 300ms ease-in;
     }
   }
   &--center {
