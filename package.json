@@ -10,9 +10,9 @@
     "npm": ">= 3.10.10"
   },
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --config ./configs/webpack.config.js --color",
     "prebuild": "node ./scripts/prebuild",
-    "build": "NODE_ENV=production webpack",
+    "build": "NODE_ENV=production webpack --config ./configs/webpack.config.js --color",
     "lint": "npm run lint:scss && npm run lint:js",
     "lint:js": "eslint ./src",
     "lint:scss": "stylelint src/scss/**/*.scss"
@@ -47,5 +47,12 @@
     "webpack": "^4.2.0",
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "^3.1.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": "./configs/.eslintrc.yml"
+  },
+  "stylelint": {
+    "extends": "./configs/.stylelintrc.yml"
   }
 }

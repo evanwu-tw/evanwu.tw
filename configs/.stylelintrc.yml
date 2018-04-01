@@ -1,5 +1,7 @@
 extends: stylelint-config-sass-guidelines
 
+configBasedir: ../
+
 rules:
   indentation: 2
   selector-pseudo-element-colon-notation: single

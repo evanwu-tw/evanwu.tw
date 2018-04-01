@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -13,7 +14,7 @@ const isProd = process.env.NODE_ENV === 'production';
  */
 function generateHtmlPlugins(templateDir) {
   // Read files in template directory
-  const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
+  const templateFiles = fs.readdirSync(path.resolve('.', templateDir));
 
   return templateFiles.map((item) => {
     // Split names and extension
@@ -23,7 +24,7 @@ function generateHtmlPlugins(templateDir) {
 
     return new HtmlWebpackPlugin({
       filename: `${name}.html`,
-      template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
+      template: path.resolve('.', `${templateDir}/${name}.${extension}`),
     });
   });
 }
@@ -31,9 +32,10 @@ function generateHtmlPlugins(templateDir) {
 module.exports = {
   mode: isProd ? 'production' : 'development',
   entry: './src/index.js',
+  context: path.resolve(__dirname, '..'),
   output: {
-    filename: isProd ? 'js/[name].[hash].js' : '[name].js',
-    path: path.resolve(__dirname, 'www'),
+    filename: isProd ? 'js/[name].[hash:8].js' : '[name].js',
+    path: path.resolve('.', 'www'),
   },
 
   module: {
@@ -43,9 +45,29 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            `css-loader?minimize=${isProd}`,
-            'postcss-loader',
-            'sass-loader',
+            {
+              loader: 'css-loader',
+              options: {
+                importLoaders: 1,
+                minimize: isProd,
+              },
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: () => [
+                  autoprefixer({
+                    browsers: ['last 2 versions'],
+                  }),
+                ],
+              },
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                outputStyle: 'expanded',
+              },
+            },
           ],
           publicPath: isProd ? '../' : './',
         }),
@@ -63,7 +85,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[hash].[ext]',
+              name: '[name].[hash:8].[ext]',
               outputPath: 'img/',
             },
           },
@@ -73,8 +95,8 @@ module.exports = {
   },
 
   plugins: [
-    new ExtractTextPlugin(isProd ? 'css/[name].[contenthash].css' : '[name].css'),
-    ...generateHtmlPlugins('./src/views'),
+    new ExtractTextPlugin(isProd ? 'css/[name].[contenthash:8].css' : '[name].css'),
+    ...generateHtmlPlugins('src/views'),
   ],
 
   devServer: {
