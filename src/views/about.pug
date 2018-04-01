@@ -2,41 +2,27 @@ extends basic
 
 block background
   .hero-bg
-    <svg class="square-line-2 square-line-2--about" width="119px" height="119px" viewBox="0 0 119 119" version="1.1">
-      <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-3" transform="translate(-1181.000000, -829.000000)" stroke="#F7F7F7" stroke-width="15">
-          <path d="M1188.68466,837.395371 L1291.68466,837.395371 L1291.68466,940.395371 L1188.68466,940.395371 L1188.68466,837.395371 Z" id="方框2"></path>
-        </g>
-      </g>
-    </svg>
-    <svg class="square-line-3 square-line-3--about" width="465px" height="465px" viewBox="0 0 465 465" version="1.1">
-      <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-3" transform="translate(-2079.000000, -248.000000)" stroke="#F7F7F7" stroke-width="30">
-          <path d="M2094.16227,263.503308 L2528.16227,263.503308 L2528.16227,697.503308 L2094.16227,697.503308 L2094.16227,263.503308 Z" id="方框3"></path>
-        </g>
-      </g>
-    </svg>
-    <svg class="square-line-4 square-line-4--about" width="151px" height="151px" viewBox="0 0 151 151" version="1.1">
-      <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-3" transform="translate(-1854.000000, -812.000000)" stroke="#F7F7F7" stroke-width="10">
-          <path d="M1859.60519,817.605186 L1999.60519,817.605186 L1999.60519,957.605186 L1859.60519,957.605186 L1859.60519,817.605186 Z" id="方框4"></path>
-        </g>
-      </g>
-    </svg>
-    <svg class="square square--about" width="57px" height="57px" viewBox="0 0 57 57" version="1.1">
-      <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-3" transform="translate(-1193.000000, -578.000000)" fill="#4ACDD9">
-          <polygon id="正方形1" points="1193.59798 578.59798 1249.59798 578.59798 1249.59798 634.59798 1193.59798 634.59798"></polygon>
-        </g>
-      </g>
-    </svg>
-    <svg class="triangle triangle--about" width="36px" height="32px" viewBox="0 0 36 32" version="1.1">
-      <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-3" transform="translate(-1481.000000, -846.000000)" fill="#F26868">
-          <polygon id="Polygon-1" points="1517.01727 846.438765 1499.55309 877.94498 1481 847.067449"></polygon>
-        </g>
-      </g>
-    </svg>
+    svg(class="square-line-2 square-line-2--about" width="119px" height="119px" viewBox="0 0 119 119")
+      g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+        g(transform="translate(-1181.000000, -829.000000)" stroke="#F7F7F7" stroke-width="15")
+          path(d="M1188.68466,837.395371 L1291.68466,837.395371 L1291.68466,940.395371 L1188.68466,940.395371 L1188.68466,837.395371 Z")
+    svg(class="square-line-3 square-line-3--about" width="465px" height="465px" viewBox="0 0 465 465")
+      g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+        g(transform="translate(-2079.000000, -248.000000)" stroke="#F7F7F7" stroke-width="30")
+          path(d="M2094.16227,263.503308 L2528.16227,263.503308 L2528.16227,697.503308 L2094.16227,697.503308 L2094.16227,263.503308 Z")
+    svg(class="square-line-4 square-line-4--about" width="151px" height="151px" viewBox="0 0 151 151")
+      g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+        g(transform="translate(-1854.000000, -812.000000)" stroke="#F7F7F7" stroke-width="10")
+          path(d="M1859.60519,817.605186 L1999.60519,817.605186 L1999.60519,957.605186 L1859.60519,957.605186 L1859.60519,817.605186 Z")
+    svg(class="square square--about" width="57px" height="57px" viewBox="0 0 57 57")
+      g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+        g(transform="translate(-1193.000000, -578.000000)" fill="#4ACDD9")
+          polygon(points="1193.59798 578.59798 1249.59798 578.59798 1249.59798 634.59798 1193.59798 634.59798")
+    svg(class="triangle triangle--about" width="36px" height="32px" viewBox="0 0 36 32")
+      g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+        g(transform="translate(-1481.000000, -846.000000)" fill="#F26868")
+          polygon(points="1517.01727 846.438765 1499.55309 877.94498 1481 847.067449")
+
 block head-title
   h1 Better design, <br>Better experiences.
 
@@ -69,13 +55,13 @@ block content
         li Strong sense of design theory and typography
         li Analyze user testing, measuring and rebuilding
         li Great positive attitude with an empathetic and holistic view
-        li Orchestrated product's UI design on teamwork. And furthered team recognized design trends. 
+        li Orchestrated product's UI design on teamwork. And furthered team recognized design trends.
   section.cv-section
     h3.cv-section__title EXPERIENCES
     .cv-section__content
       ul.co-list
         li.co-title Product Designer
-        li.co-info 
+        li.co-info
           |旺普網路資訊股份有限公司 <br>
           a(href="https://www.gamer.com.tw" target="_blank") 巴哈姆特電玩資訊站
         li.co-date 2016 JUL - 2018 FEB
@@ -83,11 +69,11 @@ block content
         li.co-info Galaxy Software Services Crop
         li.co-date 2013 MAY - 2016 MAY
         li.co-title Web Designer
-        li.co-info 
+        li.co-info
           |嚮網科技股份有限公司 <br>
-          a(href="https://www.youthwant.com.tw" target="_blank") 優仕網 
-          span /  
-          a(href="https://iguang.tw" target="_blank") 愛逛街 
+          a(href="https://www.youthwant.com.tw" target="_blank") 優仕網
+          span /
+          a(href="https://iguang.tw" target="_blank") 愛逛街
         li.co-date 2011 NOV - 2013 MAY
   section.cv-section
     h3.cv-section__title I LOVE

@@ -2,34 +2,23 @@ extends basic
 
 block background
   .hero-bg
-    <svg class="square-line-1 square-line-1--index" width="710px" height="710px" viewBox="0 0 710 710" version="1.1">
-      <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-3" transform="translate(-169.000000, -191.000000)" stroke="#F7F7F7" stroke-width="50">
-          <path d="M194,216 L854,216 L854,876 L194,876 L194,216 Z" id="方框1"></path>
-        </g>
-      </g>
-    </svg>
-    <svg class="square-line-2 square-line-2--index" width="119px" height="119px" viewBox="0 0 119 119" version="1.1">
-      <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-3" transform="translate(-1181.000000, -829.000000)" stroke="#F7F7F7" stroke-width="15">
-          <path d="M1188.68466,837.395371 L1291.68466,837.395371 L1291.68466,940.395371 L1188.68466,940.395371 L1188.68466,837.395371 Z" id="方框2"></path>
-        </g>
-      </g>
-    </svg>
-    <svg class="square square--index" width="57px" height="57px" viewBox="0 0 57 57" version="1.1">
-      <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-3" transform="translate(-1193.000000, -578.000000)" fill="#4ACDD9">
-          <polygon id="正方形1" points="1193.59798 578.59798 1249.59798 578.59798 1249.59798 634.59798 1193.59798 634.59798"></polygon>
-        </g>
-      </g>
-    </svg>
-    <svg class="triangle triangle--index" width="36px" height="32px" viewBox="0 0 36 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-3" transform="translate(-1481.000000, -846.000000)" fill="#F26868">
-          <polygon id="Polygon-1" points="1517.01727 846.438765 1499.55309 877.94498 1481 847.067449"></polygon>
-        </g>
-      </g>
-    </svg>
+    svg(class="square-line-1 square-line-1--index" width="710px" height="710px" viewBox="0 0 710 710")
+      g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+        g(transform="translate(-169.000000, -191.000000)" stroke="#F7F7F7" stroke-width="50")
+          path(d="M194,216 L854,216 L854,876 L194,876 L194,216 Z" id="方框1")
+    svg(class="square-line-2 square-line-2--index" width="119px" height="119px" viewBox="0 0 119 119")
+      g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+        g(transform="translate(-1181.000000, -829.000000)" stroke="#F7F7F7" stroke-width="15")
+          path(d="M1188.68466,837.395371 L1291.68466,837.395371 L1291.68466,940.395371 L1188.68466,940.395371 L1188.68466,837.395371 Z")
+    svg(class="square square--index" width="57px" height="57px" viewBox="0 0 57 57")
+      g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+        g(transform="translate(-1193.000000, -578.000000)" fill="#4ACDD9")
+          polygon(points="1193.59798 578.59798 1249.59798 578.59798 1249.59798 634.59798 1193.59798 634.59798")
+    svg(class="triangle triangle--index" width="36px" height="32px" viewBox="0 0 36 32")
+      g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+        g(transform="translate(-1481.000000, -846.000000)" fill="#F26868")
+          polygon(points="1517.01727 846.438765 1499.55309 877.94498 1481 847.067449")
+
 block head-title
   h1 Evan Wu
   p Web & UI Designer
@@ -46,7 +35,7 @@ block content
           .col-4.col-pd-p-12
             .service
               img.service-img(src="../img/application.svg")
-              h3.service-title 
+              h3.service-title
                 |Web Applications
               p.service-content
                 |I’ll fixed visual impact, and united products and user, design and experiences.
@@ -56,14 +45,14 @@ block content
               h3.service-title
                 |RWD & Mobile web
               p.service-content
-                |Used techincal of RWD or mobile web to integrate cross device experiences.           
+                |Used techincal of RWD or mobile web to integrate cross device experiences.
           .col-4.col-pd-p-12
             .service
               img.service-img(src="../img/edit.svg")
               h3.service-title
                 |Front-End Development
               p.service-content
-                |I can develop your product from visual concept to production.      
+                |I can develop your product from visual concept to production.
   section.section
     .section__inner
       .section-title THE PROJECTS
@@ -92,7 +81,7 @@ block content
               a.poster-link
                 .poster-photo
                   img(src="http://fakeimg.pl/800x600", alt="")
-                .poster-info 作品介紹以及文案相關位置            
+                .poster-info 作品介紹以及文案相關位置
           .col-4.col-pd-p-12
             .poster
               a.poster-link
