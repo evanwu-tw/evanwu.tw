@@ -22,7 +22,8 @@
     "url": "git+https://github.com/evanwu-tw/evanwu.tw"
   },
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "parallax-js": "^3.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.2.0",

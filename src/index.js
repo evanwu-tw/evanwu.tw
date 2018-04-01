@@ -1,4 +1,5 @@
 const $ = require('jquery');
+const Parallax = require('parallax-js');
 require('./scss/basic.scss');
 
 // head scroll fix
@@ -14,13 +15,22 @@ function headScroll() {
 
 // nav-collapse
 function navCollapse() {
-  var burgerIcon = $('.burg');
-  var container = $('.header');
-  var navBtn = $('.nav-ctrl-btn');
+  $('.nav-ctrl-btn').on('click', () => {
+    $('.burg').toggleClass('activeBurg');
+    $('.header').toggleClass('open-menu');
+  });
+}
 
-  navBtn.on('click', function () {
-    burgerIcon.toggleClass('activeBurg');
-    container.toggleClass('open-menu');
+function heroParallax() {
+  const parallaxInstance = new Parallax($('.hero-bg')[0]);
+
+  // Disable parallax effect if scroll till half hero's height
+  $(window).scroll(() => {
+    if ($(window).scrollTop() > $('.hero-bg')[0].clientHeight / 2) {
+      parallaxInstance.disable();
+    } else {
+      parallaxInstance.enable();
+    }
   });
 }
 
@@ -28,4 +38,5 @@ function navCollapse() {
 $(document).ready(() => {
   headScroll();
   navCollapse();
+  heroParallax();
 });
