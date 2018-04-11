@@ -83,19 +83,19 @@
 .first-in {
   display: block;
   transform: translateY(100px);
-  animation: title-show 1.6s ease-out forwards;
+  animation: title-show 1.4s ease-out forwards;
 }
 
 .sec-in {
   display: block;
   transform: translateY(100px);
-  animation: title-show 1.6s ease-out 600ms forwards;
+  animation: title-show 1.4s ease-out 500ms forwards;
 }
 
 .third-in {
   display: block;
   transform: translateY(100px);
-  animation: title-show 1.6s ease-out 1200ms forwards;
+  animation: title-show 1.4s ease-out 1s forwards;
 }
 
 // ----- hero bg ----- //
@@ -196,11 +196,11 @@
   left: 0;
   z-index: z(default);
   height: 30px;
-  font-size: 20px;
+  font-size: 24px;
   color: $c-brand;
   text-align: center;
   & > [class ~="fa-chevron-down"] {
-    animation: scroll-loop 1000ms ease-in infinite;
+    animation: scroll-loop 1s ease-in infinite;
   }
 }
 
@@ -213,7 +213,7 @@
     color: $c-brand;
   }
   50% {
-    transform: translate3d(0 , 8px, 0);
+    transform: translate3d(0 , 12px, 0);
     color: darken($c-primary, 20%);
   }
   100% {
