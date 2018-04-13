@@ -1,5 +1,8 @@
 const $ = require('jquery');
-const Parallax = require('parallax-js');
+window.jQuery = $;
+const Parallax = require('parallax-js')
+require('@fancyapps/fancybox');
+require('@fancyapps/fancybox/dist/jquery.fancybox.min.css');
 require('./scss/basic.scss');
 
 // head scroll fix
