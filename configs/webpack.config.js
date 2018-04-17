@@ -9,24 +9,41 @@ const isProd = process.env.NODE_ENV === 'production';
 /**
  * Generate multi html entries
  *
- * @param   {String} templateDir
+ * @param   {String|Object} templateDir
+ * @param   {Object} options     - options to html-webpack-plugin
  * @returns {Array}
  */
-function generateHtmlPlugins(templateDir) {
+function generateHtmlPlugins(templateDir, options = {}) {
   // Read files in template directory
-  const templateFiles = fs.readdirSync(path.resolve('.', templateDir));
+  const directory = typeof templateDir === 'string'
+    ? templateDir
+    : `${templateDir.base}/${templateDir.sub}`;
+  const templateFiles = fs.readdirSync(path.resolve('.', directory));
 
   return templateFiles.map((item) => {
+    // Skip underscore files
+    if (item.startsWith('_')) {
+      return null;
+    }
+
+    // directory
+    if (fs.statSync(`${directory}/${item}`).isDirectory()) {
+      return null;
+    }
+
     // Split names and extension
     const parts = item.split('.');
     const name = parts[0];
     const extension = parts[1];
 
     return new HtmlWebpackPlugin({
-      filename: `${name}.html`,
-      template: path.resolve('.', `${templateDir}/${name}.${extension}`),
+      filename: typeof templateDir === 'string'
+        ? `${name}.html`
+        : `${templateDir.sub}/${name}.html`,
+      template: path.resolve('.', `${directory}/${name}.${extension}`),
+      ...options,
     });
-  });
+  }).filter(item => item);
 }
 
 module.exports = {
@@ -101,6 +118,10 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin(isProd ? 'css/[name].[contenthash:8].css' : '[name].css'),
     ...generateHtmlPlugins('src/views'),
+    ...generateHtmlPlugins(
+      { base: 'src/views', sub: 'portfolio' },
+      { excludeChunks: ['main'] },
+    ), // fancybox items
   ],
 
   devServer: {
