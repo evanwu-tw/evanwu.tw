@@ -24,6 +24,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.3.5",
     "jquery": "^3.3.1",
+    "npm": "^5.8.0",
     "parallax-js": "^3.1.0"
   },
   "devDependencies": {
