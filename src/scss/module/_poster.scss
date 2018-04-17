@@ -15,7 +15,7 @@
   &:hover {
     background: $c-white;
     border-radius: 4px;
-    box-shadow: 0 16px 40px rgba(darken($c-brand, 16%), .12);
+    box-shadow: 0 14px 56px rgba(darken($c-brand, 16%), .16);
     transition: all 240ms ease-out;
     transform: translate3d(0, -8px, 0);
   }
