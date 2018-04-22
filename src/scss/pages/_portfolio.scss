@@ -26,12 +26,23 @@
 }
 
 .port-content {
+  text-align: center;
   > img  {
     display: inline-block;
     margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
+    // width: 100%;
+    // max-width: 1200px;
     vertical-align: middle;
+  }
+  &__info {
+    padding: 16px 0;
+    font-size: $font-size-base;
+    color: $c-gray-dark;
+  }
+  &__subtile {
+    padding: 32px 0 16px;
+    font-size: $font-size-large;
+    font-weight: 600;
   }
 }
 
