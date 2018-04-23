@@ -12,11 +12,11 @@
 .poster-link {
   display: block;
   padding: 8px 8px 0;
+  transition: all 240ms ease-out;
   &:hover {
     background: $c-white;
     border-radius: 4px;
     box-shadow: 0 14px 56px rgba(darken($c-brand, 16%), .16);
-    transition: all 240ms ease-out;
     transform: translate3d(0, -8px, 0);
   }
   &:active, &:focus {
