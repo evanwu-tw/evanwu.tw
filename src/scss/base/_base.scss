@@ -29,6 +29,17 @@ a {
   }
 }
 
+a.link {
+  text-decoration: none;
+  cursor: pointer;
+  color: darken($c-brand, 15%);
+  transition: color 300ms ease-in;
+  &:hover {
+    color: $c-brand;
+    text-decoration: none;
+  }
+}
+
 ::selection {
   background: $c-brand;
   color: white;

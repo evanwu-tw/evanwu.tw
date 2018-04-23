@@ -30,7 +30,7 @@
     padding: 0 0 0 64px;
     font-size: 18px;
     font-weight: 300;
-    color: lighten($c-black, 40%);
+    color: $c-gray-dark;
     > ul > li {
       margin-bottom: 8px;
     }
@@ -72,7 +72,7 @@
 
 .co-info {
   font-size: 16px;
-  color: darken($c-gray-light, 15%);
+  color: darken($c-gray-light, 24%);
   & > a, & > span {
     vertical-align: middle;
   }
