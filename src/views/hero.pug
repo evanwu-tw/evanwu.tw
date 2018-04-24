@@ -1,9 +1,9 @@
 case hero
-  //- index
+  //- about
   when "about"
     .hero.hero__sub
       .hero-bg
-        div(class="parallax-container" data-depth="1")
+        //- div(class="parallax-container" data-depth="1")
           svg(class="square-line-2 square-line-2--about" width="119px" height="119px" viewBox="0 0 119 119")
             g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
               g(transform="translate(-1181.000000, -829.000000)" stroke="#F7F7F7" stroke-width="15")
@@ -26,9 +26,11 @@ case hero
         div(class="parallax-container" data-depth="0.3")
       .hero__inner
         .hero-title
-          h1 Better design,<br>Better experiences.
+          h1 
+            span.first-in Better design,<br>Better experiences.
       .scroll-tip
         i.fas.fa-chevron-down
+  //- index
   default
     .hero
       .hero-bg
