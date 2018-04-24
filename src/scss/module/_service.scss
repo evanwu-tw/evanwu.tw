@@ -45,7 +45,7 @@
   color: $c-text;
   @include bp(pad-portrait) {
     margin-bottom: 12px;
-    margin-top: 8px;
+    margin-top: 16px;
     margin-left: 166px;
   }
   @include bp(phone-middle) {
