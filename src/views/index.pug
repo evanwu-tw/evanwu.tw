@@ -1,37 +1,40 @@
 extends _basic
 
-block background
-  .hero-bg
-    div(class="parallax-container" data-depth="1")
-      svg(class="square-line-1 square-line-1--index" width="710px" height="710px" viewBox="0 0 710 710")
-        g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
-          g(transform="translate(-169.000000, -191.000000)" stroke="#F7F7F7" stroke-width="50")
-            path(d="M194,216 L854,216 L854,876 L194,876 L194,216 Z" id="方框1")
-    div(class="parallax-container" data-depth="0.8")
-      svg(class="square-line-2 square-line-2--index" width="119px" height="119px" viewBox="0 0 119 119")
-        g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
-          g(transform="translate(-1181.000000, -829.000000)" stroke="#F7F7F7" stroke-width="15")
-            path(d="M1188.68466,837.395371 L1291.68466,837.395371 L1291.68466,940.395371 L1188.68466,940.395371 L1188.68466,837.395371 Z")
-    div(class="parallax-container" data-depth="0.6")
-      svg(class="square square--index" width="57px" height="57px" viewBox="0 0 57 57")
-        g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
-          g(transform="translate(-1193.000000, -578.000000)" fill="#4ACDD9")
-            polygon(points="1193.59798 578.59798 1249.59798 578.59798 1249.59798 634.59798 1193.59798 634.59798")
-    div(class="parallax-container" data-depth="0.3")
-      svg(class="triangle triangle--index" width="36px" height="32px" viewBox="0 0 36 32")
-        g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
-          g(transform="translate(-1481.000000, -846.000000)" fill="#F26868")
-            polygon(points="1517.01727 846.438765 1499.55309 877.94498 1481 847.067449")
+block hero
+  include hero
 
-block head-title
-  h1
-    span.first-in Evan Wu
-  p
-    span.sec-in Web & UI Designer
+//- block background
+//-   .hero-bg
+//-     div(class="parallax-container" data-depth="1")
+//-       svg(class="square-line-1 square-line-1--index" width="710px" height="710px" viewBox="0 0 710 710")
+//-         g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+//-           g(transform="translate(-169.000000, -191.000000)" stroke="#F7F7F7" stroke-width="50")
+//-             path(d="M194,216 L854,216 L854,876 L194,876 L194,216 Z" id="方框1")
+//-     div(class="parallax-container" data-depth="0.8")
+//-       svg(class="square-line-2 square-line-2--index" width="119px" height="119px" viewBox="0 0 119 119")
+//-         g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+//-           g(transform="translate(-1181.000000, -829.000000)" stroke="#F7F7F7" stroke-width="15")
+//-             path(d="M1188.68466,837.395371 L1291.68466,837.395371 L1291.68466,940.395371 L1188.68466,940.395371 L1188.68466,837.395371 Z")
+//-     div(class="parallax-container" data-depth="0.6")
+//-       svg(class="square square--index" width="57px" height="57px" viewBox="0 0 57 57")
+//-         g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+//-           g(transform="translate(-1193.000000, -578.000000)" fill="#4ACDD9")
+//-             polygon(points="1193.59798 578.59798 1249.59798 578.59798 1249.59798 634.59798 1193.59798 634.59798")
+//-     div(class="parallax-container" data-depth="0.3")
+//-       svg(class="triangle triangle--index" width="36px" height="32px" viewBox="0 0 36 32")
+//-         g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+//-           g(transform="translate(-1481.000000, -846.000000)" fill="#F26868")
+//-             polygon(points="1517.01727 846.438765 1499.55309 877.94498 1481 847.067449")
 
-block head-sub-title
-  h3
-    span.third-in Better design, better experiences.
+//- block head-title
+//-   h1
+//-     span.first-in Evan Wu
+//-   p
+//-     span.sec-in Web & UI Designer
+
+//- block head-sub-title
+//-   h3
+//-     span.third-in Better design, better experiences.
 
 block content
   section.section.gray

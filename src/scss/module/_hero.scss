@@ -18,7 +18,9 @@
   font-size: 0;
   text-align: center;
   box-sizing: border-box;
-
+  &__sub {
+    height: 80vh;
+  }
   &__inner {
     display: inline-block;
     margin: 0 auto;
