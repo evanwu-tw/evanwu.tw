@@ -22,6 +22,11 @@ function navCollapse() {
     $('.burg').toggleClass('activeBurg');
     $('.header').toggleClass('open-menu');
   });
+
+  $('.nav__link').on('click', () => {
+    $('.burg').removeClass('activeBurg');
+    $('.header').removeClass('open-menu');
+  });  
 }
 
 // smooth scroll
@@ -42,7 +47,7 @@ function smoothScroll() {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 30
         }, 1000
       );
       }
