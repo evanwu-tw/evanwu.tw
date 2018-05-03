@@ -55,7 +55,7 @@
     width: 0;
     height: 10px;
     background: $c-primary;
-    animation: title-deco 800ms ease-out forwards;
+    animation: title-deco 1.4s cubic-bezier(0,.7,.3,1) forwards;
   }
   h1, p {
     font-size: 56px;
@@ -85,19 +85,19 @@
 .first-in {
   display: block;
   transform: translateY(100px);
-  animation: title-show 1.4s ease-out forwards;
+  animation: title-show 1.4s cubic-bezier(.78,0,.22,1) forwards;
 }
 
 .sec-in {
   display: block;
   transform: translateY(100px);
-  animation: title-show 1.4s ease-out 500ms forwards;
+  animation: title-show 1.4s cubic-bezier(.78,0,.22,1) 500ms forwards;
 }
 
 .third-in {
   display: block;
   transform: translateY(100px);
-  animation: title-show 1.4s ease-out 1s forwards;
+  animation: title-show 1.4s cubic-bezier(.78,0,.22,1) 1s forwards;
 }
 
 // ----- hero bg ----- //
