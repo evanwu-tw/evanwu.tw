@@ -1,0 +1,96 @@
+extends ../_basic
+
+block hero
+  - var hero = "about"
+  include ../_hero
+
+//- block background
+//-   .hero-bg
+//-     div(class="parallax-container" data-depth="1")
+//-       svg(class="square-line-2 square-line-2--about" width="119px" height="119px" viewBox="0 0 119 119")
+//-         g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+//-           g(transform="translate(-1181.000000, -829.000000)" stroke="#F7F7F7" stroke-width="15")
+//-             path(d="M1188.68466,837.395371 L1291.68466,837.395371 L1291.68466,940.395371 L1188.68466,940.395371 L1188.68466,837.395371 Z")
+//-     div(class="parallax-container" data-depth="0.8")
+//-       svg(class="square-line-3 square-line-3--about" width="465px" height="465px" viewBox="0 0 465 465")
+//-         g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+//-           g(transform="translate(-2079.000000, -248.000000)" stroke="#F7F7F7" stroke-width="30")
+//-             path(d="M2094.16227,263.503308 L2528.16227,263.503308 L2528.16227,697.503308 L2094.16227,697.503308 L2094.16227,263.503308 Z")
+//-     div(class="parallax-container" data-depth="0.5")
+//-       svg(class="square-line-4 square-line-4--about" width="151px" height="151px" viewBox="0 0 151 151")
+//-         g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+//-           g(transform="translate(-1854.000000, -812.000000)" stroke="#F7F7F7" stroke-width="10")
+//-             path(d="M1859.60519,817.605186 L1999.60519,817.605186 L1999.60519,957.605186 L1859.60519,957.605186 L1859.60519,817.605186 Z")
+//-     div(class="parallax-container" data-depth="0.6")
+//-       svg(class="square square--about" width="57px" height="57px" viewBox="0 0 57 57")
+//-         g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+//-           g(transform="translate(-1193.000000, -578.000000)" fill="#4ACDD9")
+//-             polygon(points="1193.59798 578.59798 1249.59798 578.59798 1249.59798 634.59798 1193.59798 634.59798")
+//-     div(class="parallax-container" data-depth="0.3")
+//-       svg(class="triangle triangle--about" width="36px" height="32px" viewBox="0 0 36 32")
+//-         g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+//-           g(transform="translate(-1481.000000, -846.000000)" fill="#F26868")
+//-             polygon(points="1517.01727 846.438765 1499.55309 877.94498 1481 847.067449")
+
+//- block head-title
+//-   h1 Better design,<br>Better experiences.
+
+block content
+  section.cv-section
+    h3.cv-section__title ABOUT ME
+    .cv-section__content
+      ul
+        li Hello, I'm a Web and UI designer from Taiwan.  Have 6 years of experience in a wide range of design field. And focus on the digital product for multiple devices both mobile and website design. <br><br>For friendly communication and extended design limitation, I have developed experience to through the way of design thinking and programming logic. Feel free to download my <a class="link" style="font-weight: 700;" href="https://www.dropbox.com/s/l77h5qnyhg4kw4u/evanwu-resume.pdf?dl=0" target="_blank">resume</a>.
+  section.cv-section
+    h3.cv-section__title SKILL
+    .cv-section__content
+      ul.ls-bullet
+        li Superior skills with Photoshop/Illustrator/Sketch
+        li Strong background in Interaction Design, User Interface Design and User Experience Design
+        li Make prototype with Marvel APP, Principle, Flinto
+        li Strong foundation in web design SCSS, CSS, HTML, Pug, jQuery
+  section.cv-section
+    h3.cv-section__title I HAVE
+    .cv-section__content
+      ul.ls-bullet
+        li Coordinated product problem with programmers and PM
+        li Sketching, creating wireframes, prototyping, storytelling
+        li Experience in RWD, cross-platform compatible coding techniques and troubleshooting
+        li Great storytelling, communication and collaboration skills
+        li Doing research, value propositions and information structure
+        li Passion for experience design, with focus on building functional and usable products
+        li Building user stories, task flows, storyboards, sitemaps, use cases and scenarios
+        li Strong eye for clean, pixel perfect design and a relentless attention to detail
+        li Strong sense of design theory and typography
+        li Analyze user testing, measuring and rebuilding
+        li Great positive attitude with an empathetic and holistic view
+        li Orchestrated product's UI design on teamwork. And furthered team recognized design trends.
+  section.cv-section
+    h3.cv-section__title EXPERIENCES
+    .cv-section__content
+      ul.co-list
+        li.co-title Product Designer
+        li.co-info
+          |旺普網路資訊股份有限公司 <br>
+          a(href="https://www.gamer.com.tw" target="_blank") 巴哈姆特電玩資訊站
+        li.co-date 2016 JUL - 2018 FEB
+        li.co-title Sr. Web/UI designer
+        li.co-info Galaxy Software Services Crop
+        li.co-date 2013 MAY - 2016 MAY
+        li.co-title Web Designer
+        li.co-info
+          |嚮網科技股份有限公司 <br>
+          a(href="https://www.youthwant.com.tw" target="_blank") 優仕網
+          span /
+          a(href="https://iguang.tw" target="_blank") 愛逛街
+        li.co-date 2011 NOV - 2013 MAY
+  section.cv-section
+    h3.cv-section__title I LOVE
+    .cv-section__content
+      ul.ls-bullet
+        li Travelling, exploring new places and taking photos
+        li Reading blog, books and design news
+        li Learning new things and innovative technology
+        li Listening music
+        li Playing guitar
+        li Playing with cat
