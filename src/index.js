@@ -1,8 +1,7 @@
 const $ = require('jquery');
+
 window.jQuery = $;
-const Parallax = require('parallax-js')
-require('@fancyapps/fancybox');
-require('@fancyapps/fancybox/dist/jquery.fancybox.min.css');
+const Parallax = require('parallax-js');
 require('./scss/basic.scss');
 
 // head scroll fix
@@ -26,33 +25,32 @@ function navCollapse() {
   $('.nav__link').on('click', () => {
     $('.burg').removeClass('activeBurg');
     $('.header').removeClass('open-menu');
-  });  
+  });
 }
 
 // smooth scroll
 function smoothScroll() {
   $('a[href*="#"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top - 30
-        }, 1000
-      );
+    .click((event) => {
+      // On-page links
+      if (
+        window.location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+        &&
+        window.location.hostname === this.hostname
+      ) {
+        // Figure out element to scroll to
+        let target = $(this.hash);
+        target = target.length ? target : $(`[name=' ${this.hash.slice(1)}']`);
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top - 30,
+          }, 1000);
+        }
       }
-    }
-  });
+    });
 }
 
 function heroParallax() {
