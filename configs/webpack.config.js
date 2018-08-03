@@ -37,9 +37,7 @@ function generateHtmlPlugins(templateDir, options = {}) {
     const extension = parts[1];
 
     return new HtmlWebpackPlugin({
-      filename: typeof templateDir === 'string'
-        ? `${name}.html`
-        : `${templateDir.sub}/${name}.html`,
+      filename: `${name}.html`,
       template: path.resolve('.', `${directory}/${name}.${extension}`),
       ...options,
     });

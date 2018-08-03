@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible",content="IE=edge,chrome=1")
+    meta(name="viewport", content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width")
+    meta(name="apple-mobile-web-app-capable",content="yes")
+    title EvanWu - Product Designer
+    link(rel="shortcut icon" href="./favicon.ico")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700", rel="stylesheet")
+    block css
+    //- Global site tag (gtag.js) - Google Analytics
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-73277076-1")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-73277076-1');
+
+  body
+    .wrapper
+      header.header
+        .header__inner
+          a.logo-link(href="./")
+            .logo
+              img(src="../img/logo.svg")
+          ul.nav.nav--header
+            li.nav__item
+              a.nav__link(href="./#hook_project") Works
+            li.nav__item
+              a.nav__link(href="about.html") About
+            li.nav__item
+              a.nav__link(href="https://dribbble.com/evanwu_tw" target="_blank")
+                i.fab.fa-dribbble
+            li.nav__item
+              a.nav__link(href="https://www.behance.net/evan_wu" target="_blank")
+                i.fab.fa-behance
+            li.nav__item
+              a.nav__link(href="https://linkedin.com/in/evan-wu-tw" target="_blank")
+                i.fab.fa-linkedin-in
+            li.nav__item
+              a.nav__link(href="mailto:evanwu@evanwu.tw")
+                i.far.fa-envelope
+          button.nav-ctrl-btn
+            i.burg
+      .project-box
+        .port-header
+          block header
+        .port-content
+          block content
+        .port-footer
+      script(defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous")
+      block script
