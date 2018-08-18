@@ -118,8 +118,7 @@ module.exports = {
     ...generateHtmlPlugins('src/views'),
     ...generateHtmlPlugins(
       { base: 'src/views', sub: 'portfolio' },
-      { excludeChunks: ['main'] },
-    ), // fancybox items
+    ),
   ],
 
   devServer: {

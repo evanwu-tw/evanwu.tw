@@ -24,7 +24,7 @@
   &__inner {
     display: inline-block;
     margin: 0 auto;
-    padding: 30vh 16px 0;
+    padding: 16vh 16px 0;
     width: 100%;
     max-width: 1200px;
     text-align: left;
@@ -56,6 +56,11 @@
     height: 10px;
     background: $c-primary;
     animation: title-deco 1.4s cubic-bezier(0,.7,.3,1) forwards;
+  }
+  &--sub {
+    &::before {
+      background: $c-secondary;
+    }
   }
   h1, p {
     font-size: 56px;
@@ -172,7 +177,7 @@
     bottom: 40%;
   }
   &--about {
-    right: 55%;
+    right: 45%;
     bottom: 60%;
   }
 }
@@ -184,8 +189,8 @@
     bottom: 15%;
   }
   &--about {
-    left: 35%;
-    bottom: 5%;
+    left: 15%;
+    bottom: 8%;
   }
 }
 
@@ -202,7 +207,7 @@
   color: $c-brand;
   text-align: center;
   & > [class ~="fa-chevron-down"] {
-    animation: scroll-loop 1s ease-in infinite;
+    animation: scroll-loop 1.4s ease-in infinite;
   }
 }
 
@@ -215,7 +220,7 @@
     color: $c-brand;
   }
   50% {
-    transform: translate3d(0 , 12px, 0);
+    transform: translate3d(0 , 6px, 0);
     color: darken($c-primary, 20%);
   }
   100% {
