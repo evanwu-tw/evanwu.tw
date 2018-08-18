@@ -5,23 +5,27 @@
 // *************************************
 
 .project-box {
-  margin: 0 !important;
-  padding: 0 !important;
-  border-radius: 4px;
-  .fancybox-close-small {
-    top: 14px;
-    right: 12px;
-  }
+  margin: 0;
+  padding: 66px 0 0 0;
 }
 
 .port-header {
   display: flex;
-  padding: 12px;
-  > .port-desc {
-    display: flex;
-    margin: 0 0 0 32px;
-    align-items: center;
-    font-size: 24px;
+  align-items: center;
+  box-sizing: border-box;
+  &__inner {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 32px 16px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: left;
+    color: $c-sub-text;
+    vertical-align: middle;
+    box-sizing: border-box;
+    @include bp(desktop) {
+      max-width: 1080px;
+    }
   }
 }
 

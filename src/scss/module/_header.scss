@@ -15,8 +15,8 @@
   padding: 32px 0 0;
   width: 100%;
   box-sizing: border-box;
-  background-color: transparent;
-  transition: padding 240ms ease-out;
+  background-color: rgba($c-white, .3);
+  transition: all 240ms ease-out;
   &.is-scroll {
     padding: 0;
     background-color: rgba($c-white, .9);
@@ -34,6 +34,11 @@
         width: 100%;
       }
     }
+  }
+  &--sub {
+    padding: 0;
+    background-color: rgba($c-white, .9);
+    box-shadow: 0 1px 6px rgba(darken($c-brand, 24%), .08);
   }
   &__inner {
     position: relative;
